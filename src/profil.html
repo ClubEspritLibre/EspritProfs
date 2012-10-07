@@ -3,9 +3,82 @@
 	<head>
 		<meta charset="utf-8"/>
 		<title> </title>
+	<script language="javascript">
+
+	function vote(v){
+		document.forms[0].vote.value = v;
+	}
+	function affiche(etoile)
+{
+	// si on affiche la 1ère / 2nd /.. étoile
+	if(etoile == 1)
+	{
+		// récupère la src des étoiles à afficher / caché
+                // star1 = image vide
+                // star2 = image pleine
+		document.getElementById('etoile2').src="img/star1.png";
+		document.getElementById('etoile3').src="img/star1.png";
+		document.getElementById('etoile4').src="img/star1.png";		
+		document.getElementById('etoile1').src="img/star2.png";
+	}
+	
+	else if(etoile == 2)
+	{
+		document.getElementById('etoile3').src="img/star1.png";
+		document.getElementById('etoile4').src="img/star1.png";
+		
+		document.getElementById('etoile1').src="img/star2.png";
+		document.getElementById('etoile2').src="img/star2.png";
+	}
+	
+	else if(etoile == 3)
+	{
+		document.getElementById('etoile4').src="img/star1.png";
+		document.getElementById('etoile1').src="img/star2.png";
+		document.getElementById('etoile2').src="img/star2.png";
+		document.getElementById('etoile3').src="img/star2.png";
+	}
+	
+	else if(etoile == 4)
+	{	
+		document.getElementById('etoile1').src="img/star2.png";
+		document.getElementById('etoile2').src="img/star2.png";					
+		document.getElementById('etoile3').src="img/star2.png";
+		document.getElementById('etoile4').src="img/star2.png";
+	}
+}	</script>
 	</head>
 
 	<body>
+
+		<form>
+
+<table width="300" border="0">
+<tr><td></td><td><img src="img/facebook-profile-picture.jpg" width="100" height="100"></td></tr>
+<tr><td>Nom:</td></tr>
+<tr><td>prénom :</td></tr>
+<tr><td>Adresse électronique :</td></tr>
+<tr><td>matiere :</td></tr>
+<tr><td>coordonnées :</td></tr>
+<tr><td>département :</td></tr>
+
+<tr><td><img onclick="vote(1);" src="img/star1.png" id="etoile1" onmouseover="affiche(1)" border="0" /></a>
+<img onclick="vote(2);" src="img/star1.png" id="etoile2" onmouseover="affiche(2)" border="0" /></a>
+<img onclick="vote(3);"src="img/star1.png" id="etoile3" onmouseover="affiche(3)" border="0" /></a>
+<img onclick="vote(4);"src="img/star1.png" id="etoile4" onmouseover="affiche(4)" border="0" /></a></td></tr>
+<td><input type="email" name="email" /></tr>
+<input type="number" name="vote" hidden/>
+<tr><td><input type="submit" name="Voter" value="Voter" /></td></tr>
+
+
+
+</table>	
+
+
+
+		</from>
+
+
 
 
 	</body>
