@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* CSS Document */
+
+    #contact-form {  
+        background-color:#F2F7F9;  
+        width:465px;  
+        padding:20px;  
+        margin: 50px auto;  
+        border: 6px solid #8FB5C1;  
+        -moz-border-radius:15px;  
+        -webkit-border-radius:15px;  
+        border-radius:15px;  
+        position:relative;  
+    }  
+
+
+.search-input {
+	width: 196px;
+	height: 20px;
+	padding: 6px 10px 6px 35px;
+	font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	color: #333;
+	outline: none;
+	position: relative;
+	background: #fff url(search-dark.png) 10px center no-repeat;
+	border: 1px solid #ccc;
+	-moz-box-shadow:    inset 0 0 1px rgba(0, 0, 0, 0.5), 0 1px 0 rgba(255, 255, 255, 0.5);
+	-webkit-box-shadow: inset 0 0 1px rgba(0, 0, 0, 0.5), 0 1px 0 rgba(255, 255, 255, 0.5);
+	box-shadow:         inset 0 0 1px rgba(0, 0, 0, 0.5), 0 1px 0 rgba(255, 255, 255, 0.5);
+	-moz-background-clip:    padding;
+	-webkit-background-clip: padding-box;
+	background-clip:         padding-box;
+	behavior: url(PIE.htc);
+}
+
+.
